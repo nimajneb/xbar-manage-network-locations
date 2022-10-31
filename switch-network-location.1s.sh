@@ -7,10 +7,12 @@
 # <xbar.desc>Switch your network location quickly</xbar.desc>
 # <xbar.dependencies>bash</xbar.dependencies>
 
+# <xbar.var>string(VAR_SYMBOL="ᯤ"): Symbol/Character used as a prefix in the menu bar</xbar.var>
+
 current_location=$(networksetup -getcurrentlocation)
 all_locations=$(networksetup -listlocations)
 
-echo "ᯤ ${current_location}"
+echo "${VAR_SYMBOL} ${current_location}"
 echo "---"
 echo "Switch location"
 echo "---"
