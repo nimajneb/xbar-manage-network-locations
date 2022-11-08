@@ -9,6 +9,8 @@
 
 # <xbar.var>string(VAR_SYMBOL="ᯤ"): Symbol/Character used as a prefix in the menu bar</xbar.var>
 
+# Set the internal field separator to \n so we can properly loop over strings
+# that have other whitespaces in them
 IFS=$'\n'
 
 current_location=$(networksetup -getcurrentlocation)
